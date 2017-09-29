@@ -9,8 +9,8 @@ public class Exercise_02 {
 
     public static void main(String[] args) {
 
-//        for (...) {
-//            System.out.println(...);
-//        }
+        for (int x = 0; x < 5; x++) {
+            System.out.println("Hello World!");
+        }
     }
 }

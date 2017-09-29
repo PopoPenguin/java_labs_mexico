@@ -15,9 +15,15 @@ package part_01;
 public class Exercise_11 {
 
     public static void main(String[] strings) {
+        int startPop = 380123456;
+        int totalSec = 3 * 365 * 24 * 60 * 60;
+        int dead = totalSec / 12;
+        int born = totalSec / 6;;
+        int immigration = totalSec / 40;;
 
-        //...
+        int endPop = startPop - dead + born + immigration;;
 
+            System.out.println("Total population over 3 years is " + endPop);
 
     }
 }

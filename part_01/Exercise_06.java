@@ -12,8 +12,15 @@ package part_01;
 public class Exercise_06 {
 
     public static void main(String[] args) {
-        //...
 
-        //System.out.println(...);
+        int total = 0;
+        for (int i = 0; i < 9 ; i++) {
+
+            total = total + i*2 + 1;
+
+        }
+
+
+        System.out.println(total);
     }
 }
