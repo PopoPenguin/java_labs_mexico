@@ -15,13 +15,14 @@ package part_01;
 public class Exercise_11 {
 
     public static void main(String[] strings) {
-        int startPop = 380123456;
-        int totalSec = 3 * 365 * 24 * 60 * 60;
-        int dead = totalSec / 12;
-        int born = totalSec / 6;;
-        int immigration = totalSec / 40;;
 
-        int endPop = startPop - dead + born + immigration;;
+        int startPop = 380123456;           //stating initial population
+        int totalSec = 3 * 365 * 24 * 60 * 60;  //calculating total secs for 3 years
+        int dead = totalSec / 12;           //calculating total dead during 3 years
+        int born = totalSec / 6;            //calculating total born during 3 years
+        int immigration = totalSec / 40;    //calculating total immigrated during 3 years
+
+        int endPop = startPop - dead + born + immigration;  //formula to calculate totat population over 3 years
 
             System.out.println("Total population over 3 years is " + endPop);
 

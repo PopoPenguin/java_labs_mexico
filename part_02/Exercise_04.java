@@ -15,5 +15,13 @@ public class Exercise_04 {
 
     public static void main(String[] args) {
 
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter pounds: ");
+        double pounds = input.nextDouble();     //input of pounds
+
+        double kilos = pounds * .454;           //.454 kilo/pounds
+
+        System.out.println(pounds + " pounds is " + kilos + " kilos");
     }
 }

@@ -11,12 +11,12 @@ public class Exercise_10 {
 
     public static void main(String[] args) {
 
-        double dist = 12;
-        double min = 30;
-        double sec = 30;
-        double hour = (min / 60) + (sec / 60 / 60);;
-        double mile = dist / 1.6 ;;
-        double mph = mile / hour ;
+        double dist = 12;               // setting # of distance in km
+        double min = 30;                // setting # of mintues
+        double sec = 30;                // setting # of sec
+        double hour = (min / 60) + (sec / 60 / 60);     //formula to calculate total hours
+        double mile = dist / 1.6 ;                  //formula to convert km to miles
+        double mph = mile / hour ;                  //formula to calculate miles/hour
 
 
         System.out.println("Runner running 12 kilometers in 30 minutes and 30 seconds will have a");

@@ -22,15 +22,20 @@ public class Exercise_11 {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter investment amount: ");
-        //...
+        double investment = input.nextDouble();      //input of investment as a double
 
-        System.out.print("Enter annual interest rate in percentage: ");
-        //...
+        System.out.print("Enter annual interest rate in percentages: ");
+        double interest = input.nextDouble();       //input of interest as a double
 
         System.out.print("Enter number of years: ");
-        //...
-        //...
-        //...
+        double years = input.nextDouble();          //input of years as a double
+
+        //calculation of future value = present value (1 + (interest as a percentage/100))^years
+        double value = investment * Math.pow(1 + (interest/100), years);
+
+
+        System.out.println("Your value over " + years + " years is $" + value);
+
     }
 }
 

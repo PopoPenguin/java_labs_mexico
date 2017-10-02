@@ -21,7 +21,16 @@ public class Exercise_01 {
 
         System.out.print("Enter a degree in Celsius: ");
 
+        double degreeCelsius=input.nextDouble();  // input of Celsius
+
+
+
+        double fahrenheit = 9 * (degreeCelsius / 5) + 32; // calculation for fahrenheit
+
+        System.out.println(degreeCelsius + " degrees celsius = " + fahrenheit + " fahrenheit");
+
+       }
 
         
     }
-}
+

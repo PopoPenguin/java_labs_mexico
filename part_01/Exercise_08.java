@@ -14,9 +14,10 @@ public class Exercise_08 {
 
     public static void main(String[] args) {
 
-        double area = 3.14 * radius * radius;
-        double perimeter = 2 * 3.14 * radius ;
+        double area = 3.14 * radius * radius;           //formula for calculating area of a circle
+        double perimeter = 2 * 3.14 * radius ;          //formula for calculating perimeter of a circle
 
+        //prints results with defined radius
 
         System.out.println("Circle with radius " + radius + " has");
         System.out.println("area of " + area + " and");

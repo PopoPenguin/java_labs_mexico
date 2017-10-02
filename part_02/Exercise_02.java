@@ -20,9 +20,18 @@ public class Exercise_02 {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter radius: ");
-        double radius = input.nextDouble();
+        double radius = input.nextDouble();     //input of radius
+
         System.out.print("Enter length: ");
-        double length = input.nextDouble();
-        //...
+        double length = input.nextDouble();     //input of length
+
+        area = radius * radius * 3.1415;        // calculation of area = pi * r ^ 2
+
+        volume = area * length;     //calculation of volume = area * length
+
+
+        System.out.println("Volume and Area of cylinder with radius " + radius + " and length " + length);
+
+        System.out.println("will have volume " + volume + " and area " + area);
     }
 }

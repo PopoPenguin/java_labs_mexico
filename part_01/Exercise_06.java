@@ -14,9 +14,10 @@ public class Exercise_06 {
     public static void main(String[] args) {
 
         int total = 0;
-        for (int i = 0; i < 9 ; i++) {
 
-            total = total + i*2 + 1;
+        for (int i = 0; i < 9 ; i++) {      // increments 9 positions
+
+            total = total + i * 2 + 1;      // sums total increments for each increment by 2 with a starting value of 1
 
         }
 
