@@ -14,21 +14,23 @@ package part_03;
  **/
 
 class Exercise_01 {
+
     public static void main(String[] args) {
 
-
+        //creates a new object of class Box and class Cat and assigns the parameters for each class
         Box one = new Box(7, 9, 15);
 
         Cat orangeCat = new Cat("orange","fat","Garfield");
 
-
+        //calls a method from class Box to calculate surface area and volume of box
         int surfaceOne= one.surfaceArea();
         int volumeOne = one.volume();
 
-
-        System.out.println("My name is " + orangeCat.name);
-        System.out.println("I am " + orangeCat.size);
-        System.out.println("My color is " + orangeCat.color + " " + orangeCat.like()) ;
+        //outputs values of parameters and results
+        System.out.println("My name is " + orangeCat.getName());
+        System.out.println("I am " + orangeCat.getSize());
+        System.out.println("My color is " + orangeCat.getColor());
+        Cat.like();
 
         System.out.println("Box one has volume " + volumeOne + " and surface area of " + surfaceOne);
 
@@ -37,7 +39,7 @@ class Exercise_01 {
 
 
 
-
+//class cat describes color size and name.  Assumes all cats like boxes
 class Cat{
 
     String color;
@@ -51,13 +53,38 @@ class Cat{
         this.name = name;
     }
 
-    public String like(){
 
-        return "I like boxes";
+    public static void like(){
+        System.out.println("i like boxes");
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
 
 
+// class Box; includes method to calculate surface area and volume based on given height width and length
 
 class  Box {
     int height;

@@ -19,12 +19,12 @@ public class Exercise_02 {
         System.out.print("Enter first number: ");
         int number = input.nextInt();     //input of number
 
-        int first = one.numberOne(number);
+        int first = one.numberOne(number);  //assigns the last number divisible by 2 for the first input
 
         System.out.print("Enter second number: ");
         number = input.nextInt();     //input of number
 
-        int second = one.numberTwo(number);
+        int second = one.numberTwo(number); //assigns the last number divisible by 3 for the second input
 
 
         System.out.println(first + " is the last number divisible by 2 for the first input");
@@ -33,6 +33,8 @@ public class Exercise_02 {
         System.out.println( "divisible by 2 and 3 is " + first * second);
     }
 
+    //numberOne method takes in first input from user and finds the highest number divisible by 2
+    //returns the result
 
     public int numberOne(int x) {
         int a = 0;
@@ -43,6 +45,9 @@ public class Exercise_02 {
         }
         return a;
     }
+
+    //numberTwo takes in second input from user and finds the highest number divisible by 3
+    //returns the result
 
     public int numberTwo(int y) {
         int b = 0;

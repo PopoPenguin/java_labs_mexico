@@ -41,19 +41,16 @@ class Exercise_06 {
         // Display results using a 12 hour clock, include AM or PM
         int counter = 0;
 
-
+        //adjusts currentHour for the timezone and adjusts for new 24 hr range
         long adjustedHour = (currentHour + timeZoneChange)%24;
 
-
-
+        //if hour is greater than 12 then adjusts time to a 12 hr range and increments counter for am to pm
         if (adjustedHour > 12){
             adjustedHour = adjustedHour -12;
             counter= 1;
         }
-
+        // sets the string amPm to either AM or PM if counter is equal to zero or not
         String amPm = (counter == 0)? "AM" : "PM";
-
-
 
         System.out.println(adjustedHour +  " hours " + currentMinutes  + " minutes "+ amPm);
     }

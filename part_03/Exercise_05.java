@@ -22,10 +22,11 @@ public class Exercise_05 {
 
 
         // use the && operator to see if the user's number is divisible by both 4 and 7
-        if (number % 4 == 0 && number % 18==0) {
-            results = " is divisible by both 4 and 18";
-        }   else if (number % 4 == 0 || number % 18 == 0) {
-            if (number % 4 == 0 ^ number % 18 == 0){
+        if (number % 4 == 0 && number % 7==0) {
+            results = " is divisible by both 4 and 7";
+        }   else if (number % 4 == 0 || number % 7 == 0) {  //determines if it is divisible by 4 or 7
+            if (number % 4 == 0 ^ number % 7 == 0){     //determines exclusivity of 4 or 7
+                //prints out what the number is divisible by exclusively
                 results = (number % 4 == 0) ? " is exclusively divisible by 4" : " is exclusively divisible by 18";
             }
         }

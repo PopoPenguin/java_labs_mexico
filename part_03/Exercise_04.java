@@ -44,6 +44,7 @@ public class Exercise_04 {
 
 
     }
+        //method to take in an interger and associated a handsign to that interger
 
     public static String getHand(int hand) {
         String handSign = "";
@@ -66,9 +67,12 @@ public class Exercise_04 {
         return handSign;
     }
 
+        //method to determine who the winner is based on boolean conditions
+
         public static String determineWinner(int computer, int player) {
 
         String status = "";
+        // if computer and player do not equal will determine the conditions of who won
         if (player !=computer) {
 
             switch (player) {
@@ -83,9 +87,8 @@ public class Exercise_04 {
                 case 2:
                     status = (computer != 0) ? "You Won!" : "You lost :(";
                     break;
-
-
             }
+            //if computer and player are equal will output a tie
         } else status = "You tied";
 
         // return status
