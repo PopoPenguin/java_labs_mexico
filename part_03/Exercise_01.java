@@ -13,3 +13,72 @@ package part_03;
 
  **/
 
+class Exercise_01 {
+    public static void main(String[] args) {
+
+
+        Box one = new Box(7, 9, 15);
+
+        Cat orangeCat = new Cat("orange","fat","Garfield");
+
+
+        int surfaceOne= one.surfaceArea();
+        int volumeOne = one.volume();
+
+
+        System.out.println("My name is " + orangeCat.name);
+        System.out.println("I am " + orangeCat.size);
+        System.out.println("My color is " + orangeCat.color + " " + orangeCat.like()) ;
+
+        System.out.println("Box one has volume " + volumeOne + " and surface area of " + surfaceOne);
+
+    }
+}
+
+
+
+
+class Cat{
+
+    String color;
+    String size;
+    String name;
+
+
+    public Cat (String color, String size, String name) {
+        this.color = color;
+        this.size = size;
+        this.name = name;
+    }
+
+    public String like(){
+
+        return "I like boxes";
+    }
+}
+
+
+
+class  Box {
+    int height;
+    int width;
+    int length;
+
+    public Box(int height, int width, int length) {
+        this.height = height;
+        this.width = width;
+        this.length = length;
+    }
+
+    // returns surface area of box
+    int surfaceArea() {
+
+        return (2 * height * width) + (2 * height * length) + (2 * length * width);
+    }
+
+    //returns volume of box
+    int volume() {
+
+        return (height * width * length);
+    }
+}
