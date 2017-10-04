@@ -8,18 +8,22 @@ class Exercise_04 {
                 {567, 1, 0, -2},
                 {18, -456, 14, 6, 48, -80}
         };
-//        System.out.println(getMaxVal(dataArray));
-//        System.out.println(getMinVal(dataArray));
+        System.out.println(getMaxVal(dataArray));
+        System.out.println(getMinVal(dataArray));
     }
 
-      // iterate through array and determine max value in array
-//    public static int getMaxVal(int[][] dataArray) {
-//
-//    }
+//       iterate through array and determine max value in array
+    public static int getMaxVal(int[][] dataArray) {
+        int max= 0;
+
+        return max;
+    }
 
 
       // iterate through array and determine minimum value
-//    public static int getMinVal(int[][] dataArray) {
-//
-//    }
+    public static int getMinVal(int[][] dataArray) {
+        int min = 0;
+
+        return min;
+    }
 }

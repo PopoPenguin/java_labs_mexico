@@ -1,4 +1,6 @@
 package part_04;
+import java.util.Scanner;
+
 
 /**
 
@@ -12,4 +14,38 @@ package part_04;
  Output can be on one line or many lines. However you like.
 
  */
+
+class Exercise_01 {
+
+    public static void main(String[] args) {
+        int number;
+
+        Scanner input = new Scanner(System.in);
+        //creates a new array called array1 of size 10
+        int array1 [] = new int [10];
+        //asks for input from user 10 times and stores input into each spot of the array
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Enter number: ");
+            array1[i] = input.nextInt();     //input of number into the array in position i
+        }
+
+        //this iterates through the positions of array and prints out the value of the positions
+        //depending on the position from 0 to 9
+
+        for (int i=0; i<10;i++) {
+            if (i%2 ==1)
+                System.out.print(array1[i] + " , ");
+        }
+
+        System.out.printf("");
+
+        //this iterates through the positions of array and prints out the value of the positions
+        //depending on the position from 9 down to 0
+
+        for (int i=9; i>=0; i--){
+            if (i%2 == 0)
+                System.out.print(array1[i] + " , ");
+        }
+    }
+}
 

@@ -11,3 +11,32 @@ package part_04;
  40 41 42 43 44 45 46 47 48 49
 
  */
+
+class Exercise_03 {
+
+    public static void main(String[] args) {
+
+        //this populates array by size 5 x 10
+        int [] [] array = new int [5] [10];
+        int counter = 0;        // counter used to fill the spots in array
+        for (int i= 0; i<5;i++){
+            for (int j= 0; j<10; j ++){
+                array [i] [j] = counter;
+                counter++;      //increments the value of counter for each index position
+            }
+        }
+
+
+        for (int i=0; i<5; i++){
+            counter = 0;            //counter initialized to 0 to keep track of position
+
+            for (int j=0; j<10; j++) {
+                System.out.print (array[i][j] + " ");
+                counter ++;         //counter is incremented to keep track of position
+                if (counter%10==0){
+                    System.out.println();       //if counter is in position 10 print a new ln
+                }
+            }
+        }
+    }
+}
