@@ -14,16 +14,28 @@ class Exercise_04 {
 
 //       iterate through array and determine max value in array
     public static int getMaxVal(int[][] dataArray) {
-        int max= 0;
-
+        int max= dataArray[0][0];               //initializes a starting point at first index for max to compare
+        for(int[] x: dataArray){                //enhanced for loop to go through dataArray
+            for(int y: x){
+                if ( y > max){                  //if the value is more than max, makes max = new value
+                    max = y;
+                }
+            }
+        }
         return max;
     }
 
 
       // iterate through array and determine minimum value
     public static int getMinVal(int[][] dataArray) {
-        int min = 0;
-
+        int min = dataArray[0][0];                            //initializes starting point at first index for min to compare
+        for(int[] x: dataArray){                //enhanced for loop to go through dataArray
+            for(int y: x){
+                if ( y < min){                  //if the value is less than min, makes min = new value
+                    min = y;
+                }
+            }
+        }
         return min;
     }
 }

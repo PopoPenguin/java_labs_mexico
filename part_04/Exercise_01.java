@@ -22,9 +22,9 @@ class Exercise_01 {
 
         Scanner input = new Scanner(System.in);
         //creates a new array called array1 of size 10
-        int array1 [] = new int [10];
+        int[] array1  = new int [10];
         //asks for input from user 10 times and stores input into each spot of the array
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < array1.length; i++) {
             System.out.print("Enter number: ");
             array1[i] = input.nextInt();     //input of number into the array in position i
         }
@@ -32,8 +32,8 @@ class Exercise_01 {
         //this iterates through the positions of array and prints out the value of the positions
         //depending on the position from 0 to 9
 
-        for (int i=0; i<10;i++) {
-            if (i%2 ==1)
+        for (int i=0; i<array1.length;i++) {
+            if (i%2 !=0)
                 System.out.print(array1[i] + " , ");
         }
 
@@ -42,7 +42,7 @@ class Exercise_01 {
         //this iterates through the positions of array and prints out the value of the positions
         //depending on the position from 9 down to 0
 
-        for (int i=9; i>=0; i--){
+        for (int i=array1.length-1; i>=0; i--){
             if (i%2 == 0)
                 System.out.print(array1[i] + " , ");
         }

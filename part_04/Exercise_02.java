@@ -12,17 +12,17 @@ class Exercise_02{
 
     public static void main(String[] args) {
 
-        int iArray [] = new int[2017];  //defined array of size 2017
+        int[] iArray  = new int[2017];  //defined array of size 2017
 
         //populates array with values of i+1 starting from index 0
-        for (int i=0;i<=iArray.length-1; i++){
+        for (int i=0;i<iArray.length; i++){
             iArray[i]=i+1;
         }
 
-        for (int i=iArray.length-1;i>=0; i--){
+        for (int i=iArray.length-1;i>=0; i--){      //starts from the last index of array
 
-            if (iArray[i]%2 == 1) {                 //checks to see if the value at index i is odd
-                System.out.println(iArray[i]);
+            if (iArray[i]%2 != 0) {                 //checks to see if the value at index i is odd
+                System.out.println(iArray[i]);      //if true prints out the value of iArray at index i
             }
         }
     }
