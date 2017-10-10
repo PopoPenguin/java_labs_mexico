@@ -7,3 +7,29 @@ package part_05;
  * out "Hello Recursion!" 10 times.
  *
  */
+
+
+class Exercise_05 {
+
+
+    public static void main(String[] args) {
+
+        Exercise_05 five = new Exercise_05();   //creating an object of the class to be able to execute recursive method
+        int sum = five.recursive(10);   // calculating sum of the recursion
+        System.out.println(sum);            //printing out the sum of the recursion
+    }
+
+    int recursive(int x) {
+        if (x == 1) {               //breaks out of recursion method when x ==1
+            System.out.println("Hello Recursion!! " + x); //outputting Hello Recursion
+            return 1;
+        }
+
+        System.out.println("Hello Recursion!! " + x);
+
+        return x + recursive(x - 1);    //return recursion value
+
+
+    }
+
+}

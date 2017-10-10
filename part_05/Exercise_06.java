@@ -29,5 +29,11 @@ public class Exercise_06 {
             throw new IllegalArgumentException("Can't accept negative arguments");
         return
                 (n < 2) ? n : fibonacci(n-1) + fibonacci(n-2);
+        // if n less than 2 than value is n otherwise it is recursion of fibonacci (n-1) +  (n -2)
+        //fibonacci (4) = fibonacci (3) + fibonacci (2)
+        //                fibonacci (2) + fibonacci (1) + fibonacci (1) + fibonacci (0)
+        //                fibonacci (1) + fibonacci (0) + fibonacci (1) + fibonacci (1) + fibonacci (0)
+        //fibonacci (3) = fibonacci (2) + fibonacci (1)
+        //                fibonacci (1) + fibonacci (0) + fibonacci (1)
     }
 }
