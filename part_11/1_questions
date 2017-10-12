@@ -1,0 +1,28 @@
+
+1) Turn the following into a Generic interface:
+
+   public interface Consumer {
+       public void consume(String parameter)
+   }
+
+2) What are a few advantages of using Generic types?
+
+3) What is Type Erasure?
+
+4) Assuming the following snippet:
+
+    public static <T> T returnType(T argument) {
+        return argument;
+    }
+
+    Does this work?
+    Integer i = returnType(1);
+    String s = returnType("String");
+
+5) What is a Bounded Type Parameter?
+
+6) Demonstrate the use of Generic Wildcard in a method signature:
+
+7) What are bounded and unbounded wildcards in Generics?
+
+8) What is difference between List<? extends T>  and  List <? super T> ?
