@@ -7,39 +7,52 @@ Answer the following questions:
 
 2) What the code required to create (instantiate) a String array with size 10 named "cats"?
 
-    String cats[] = new String [10];
+    String[] cats = new String [10];
 
 3) What is a multidimensional array?
 
     An array that consists of multiple arrays
+    An array of an arrays
 
 4) What is the code required to create (instantiate) a 2-dimensional int array that is 6 high and 6 wide named "scores"?
 
-    int scores [] [] = new int [6] [6];
+    int[][] scores = new int [6] [6];
 
 5) Using code, how do you retrieve a String that is the 10th item in a traditional array named dogs?
 
-    System.out.println(dogs [10]);
+    System.out.println(dogs [9]);
+
+    -String dogName = dogs[9];
 
 6) What is an ArrayIndexOutOfBoundsException?
     when you are indexing out of the size of the array
 
-
+    -when you request an item that is outside the bounds of the array
+    - for instance if you create an array with length 10 and then try to retrieve an item from the 10th index
+        creates IndexOutofBounds error because final index is 9
 7) Using one line of code, demonstrate how to retrieve the second to the last item from a int array.
     str[str.length-2]
 
+    -int seconToLast=arrayName[arrayName.length-2];
 8) What is the maximum allowable size of an array in Java?
-    same size as interger - 5
+    same size as integer - 2^31-1
 
 9) What is a bubble sort?
     is a linear sorting program
 
-
+    - a very inefficient sorting algorithm
+    - requires a nested for loop
+    - outer loop must run as many times as the length of the length of collection -1
+    - inner loop compares sequential pairs and swaps them if need be
+    - depending on whether you're starting from the bottom or the top, the (next) smallest number will
+        bubble to the top of each subsequent loop (or vice versa, largest number bubble to the bottom on
+        each loop)
 10) How does a bubble sort work?
     it compares two positions in the array and compares their values, if a value is less than the other it will
     substitute into a temporary variable and adjust the new index positions
     then it will assign the temporary value into the new index position
 
+    - see above
 11) When might you use an irregular array? What is a good example of an irregular array?
     When you have an array of different lengths
     A bus schedule will have the same run times except on the weekend
@@ -51,7 +64,7 @@ Answer the following questions:
 
 13) Demonstrate how to iterate through an array, printing each value, using a while loop.
     int i =0;
-    while(i!=array.length-1;){
+    while(i<array.length){
     sout (array[i]);
     i++;
     }
@@ -64,23 +77,20 @@ Answer the following questions:
 15) What are the two primary operations that a queue performs?
     put and get
 
-
 16) What is a stack?
     is a type of data structure in which elements are accessed first in last out order only
-
 
 17) What differentiates stacks and queues?
     first in last out vs first in first out
 
 
 18) When would you use an enhanced for loop?
-    when you need to cycle through an array
+    when you need to cycle through all the values of an array/multi dimensional array
 
-
+    - when you want to iterate over every item in the collection and you don't need access to the index
 19) What is "The Collections Framework"? What classes does it include?
     is a set of classes that implement various data structures
     includes list, vectors, sets, and maps
-
 
 20) How do you iterate over a two-dimensional array? Demonstrate using psuedo code.
     you would need to use an enhanced for loop and create an array of the variable
@@ -90,15 +100,31 @@ Answer the following questions:
         }
     }
 
+    Can also write it traditionally
+    for (int i=0;i<nums.length;i++){
+        for int(j=0;j<nums[i].length;j++){
+            sout(nums[i][j]);
+        }
+    }
+
 21) What is a String?
     A string is an object data type enclosed by " " that contains characters
 
+    - a datatype composed of words
+    - a string of chars
+    - an Object type; it is not a primitive type
 22) What are a few common methods for operating on Strings?
     .length ; .equals ; .compareTo ; .lastIndexOf ;
 
+    -String str = "hey My Name is";
+    int x = str.length();
+    str = str.replace("h","H");
+    str = str.subString(0,6);
 23) What does "Strings are immutable" mean?
     the string or character sequence cannot be altered.
 
+    - cannot change them -  even if you are just adding one character to an existing string - the old string
+    is deleted and a new object is created
 24) Using the CLI, how do you invoke a Java application and provide two parameters to the main method?
     java name_Class one two [enter]
 

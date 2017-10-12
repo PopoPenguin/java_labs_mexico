@@ -27,6 +27,7 @@ class Exercise_09{
 
         }
         System.out.println(s);  //print out results of s
+        System.out.println(s.toString());
     }
 
 }

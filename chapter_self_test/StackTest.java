@@ -1,6 +1,9 @@
-package part_05;
+package chapter_self_test;
 import java.util.Scanner;
-import java.util.Stack;
+/*  Currently not working properly, test Stack only
+
+ */
+
 
 public class StackTest {
     private char[] ch;
@@ -15,22 +18,30 @@ public class StackTest {
         if (location == ch.length) {
             System.out.println("Stack is full");
             return;
+        } else if(location<ch.length ) {
+            ch[location++] = input;
+
         }
-        ch[location++] = input;
 
     }
 
-    public char popLoc() {
-        if (location==0) {
-            System.out.println("Stack Empty");
-            return '-';
-        }else if(location!=0) {
-            return ch[location--];
-        }
+    public void popLoc() {
+        if (location==0){
+            System.out.println("Stack is now empty");
+            return;
+        } else
+            location--;
+            System.out.println(ch[location]);
+            return;
 
-        return '-';
 
     }
+
+    public int getLocation(){
+        return location;
+    }
+
+
 }
 
 
@@ -42,16 +53,20 @@ class StackDemo{
         Scanner input = new Scanner(System.in);
         System.out.println("Enter size of stack");
         int size = input.nextInt();
-
+        System.out.println();
         StackTest test = new StackTest(size);
 
         test.pushLoc('a');
         test.pushLoc('b');
         test.pushLoc('c');
+        test.pushLoc('d');
+        test.pushLoc('e');
 
-        for (int i = size-1; i>=0;i--) {
-            char y = test.popLoc();
-            System.out.println(y);
+
+        for (int i =test.getLocation(); i>=0;i--) {
+
+            test.popLoc();
+
         }
 
     }

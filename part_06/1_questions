@@ -1,23 +1,43 @@
 
 1) What is Java inheritance?
+    inheritance is the ability of child/sub classes to inherit the parent class variables and methods.
+    Sub class inherits from super class
 
 2) How does inheritance work?
+    you create a subclass by extending the superclass to itself.  Subclass now inherits those variables and
+    methods defined in superclass and can build with its own unique variables and methods
 
 3) What are some advantages that inheritance provides?
+    Once you define the superclass that has the common attributes you can make as many subclass that will
+    inherit these attributes and then refine to their specific attributes
 
 4) What does the "super" keyword do?
+    it executes the super class constructor or it is used to access members of the superclass that is hidden
+    by subclasses
 
 5) In what order are constructors called when there are multiple subclasses?
+    in order of how they are coded or used
 
 6) What does it mean when a method is overridden?
+    when the subclass method and the super class has the same return type; the subclass will override the superclass
+    method
 
 7) How do overridden methods support polymorphism?
+    overridden methods are determined at run time instead of compile time and will execute the correct
+    overridden method based on the object being referred to
 
 8) What is the difference between an overloaded method and an overridden method?
+    an overloaded method is a polymorphism based on the arguments passed in
+    overridden method is a polymorphism result based on the reference object being referred to
 
 9) What is dynamic method dispatch?
+    is it an example of method overriding that determines the correct method to calculate the area based on the
+    object it is referring to
 
 10) What does the "final" keyword do?
+    prevents overriding ; makes a member final and cannot be changed; usually name of member is in all caps
 
 11) Are classes in Java are a subclass of what super class?
+    Object
+    Java is object oriented programming
 
