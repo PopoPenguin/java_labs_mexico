@@ -1,0 +1,20 @@
+
+1) What is the difference between the Thread and Runnable?
+
+2) How do you start a thread using Runnable?
+
+3) How do you start a thread using Thread?
+
+4) How do you get a thread's name?
+
+5) What does the "synchronize()" method do?
+
+6) What doe sthe "join()" method do?
+
+7) What does the "sleep()" method do?
+
+8) What is the one method you must write if you're implementing the Runnable class?
+
+9) Should you create that same method if you're extending Thread?
+
+10) Why is multi-threading so cool?

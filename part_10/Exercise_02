@@ -1,0 +1,6 @@
+
+Create an application that demonstrates how to create threads by implementing the runnable interface
+
+Create an application that demonstrates how to create threads by extending Thread
+
+Create an application that demonstrates the use of synchronized(), setPriority(), join(), getName() on threads
