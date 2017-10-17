@@ -1,0 +1,34 @@
+
+1) What is a lambda expression?
+
+2) What is the general form of a lambda expression?
+
+3) What is a functional interface?
+
+4) Write a lambda expression that uses the following functional interface:
+
+    interface SomeInterface {
+        boolean validate(int a, int b);
+    }
+
+    // write lambda here as though it were in another class
+
+5) Write a lambda expression that uses the following functional interface:
+
+    interface GenericTest {
+        boolean run(T a, T b);
+    }
+
+    // write lambda here as though it were in another class
+
+6) Write a lambda expression (including functional interface) as well as a traditional interface and interface implementation
+as well as an anonymous inner class. A three (the lambda, the interface implementation and the inner class) should do the EXACT
+same task. Use "long start = System.currentTimeMillis();" to get the start time and end time of each operation. Compare and
+contrast the three different approaches to running the same task and their speeds.
+
+
+7) What is variable capture?
+
+8) How do you throw an exception from within a lambda expression?
+
+9) RYAN TODO: method reference questions
