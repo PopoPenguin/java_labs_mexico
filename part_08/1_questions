@@ -1,29 +1,59 @@
 
 1) Describe the exception hierarchy.
-This is not a test
+    Throwable -> Exception and Error
+
 2) What is a try/catch statement?
+    try allows you to test an error type and the catch catches that error and deals with that error without the
+    program terminating early
 
 3) Why do we use try/catch statements?
+    to gracefully deal with errors
 
 4) Write a full example of a try/catch/finally statement that catches two distinct exceptions
+    for (int x = 0; x<10; x++){
+        for (int j =0; j<10; j++){
+            try { x/j !=0 //
+
 
 5) What does it mean to "throw" an exception? How does it work?
+    you are intentionally creating an exception or throwing a specific type of exception outside of the catch block
+    need to declare a new Exception and then throw; then create a catch bracket of code and catch
 
 6) What happens if your application encounters an exception and you don't catch it or throw it?
+    program will terminate and will do StackPrint
 
 7) When catching exception in an inheritance hierarchy, should you catch the subclass exception or the
 superclass exception first? Why?
+    need to catch the subclass first before superclass.  It will cause an error of cannot reach code.  Because the
+    superclass encompasses the subclass it's error will be caught and the subclass cannot be reached.
 
 8) Write a nested try/catch statement.
 
 9) What does it mean to rethrow an exception?
+    It takes the exception and throws it back out to an outer catch or object of what is calling the exception
 
 10) What are the 7 methods that come with the Throwable class?
+    pg 313 of Java book
+    Throwable fillInStackTrace()
+    String getLocalizedMessage()
+    String getMessage()
+    void printStackTrace()
+    void printStackTrace(PrintStream stream)
+    void printStackTrace(PrintWriter stream)
+    String toString()
+
+
 
 11) What does the "finally" block do?
+    it ensures a block of code will always execute when exiting the try catch block
 
 12) When is the finally block executed? Will it ever not be executed?
+    it is executed when finished with a try and catch block, it will always execute
 
 13) What are the three recently added features to Java exceptions?
+    automatic resource management
+    multi-catch
+    final rethrow or more precise rethrow
+
 
 
