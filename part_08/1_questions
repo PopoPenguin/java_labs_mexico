@@ -10,9 +10,20 @@
     to gracefully deal with errors
 
 4) Write a full example of a try/catch/finally statement that catches two distinct exceptions
+
+
     for (int x = 0; x<10; x++){
-        for (int j =0; j<10; j++){
-            try { x/j !=0 //
+        try {
+            int y=0;
+            y = y/x;
+
+        } catch (ArithmeticException e){
+            sout (ArithmeticException);
+
+        } finally {
+            sout ("This is end of try block");
+        }
+
 
 
 5) What does it mean to "throw" an exception? How does it work?
@@ -28,6 +39,31 @@ superclass exception first? Why?
     superclass encompasses the subclass it's error will be caught and the subclass cannot be reached.
 
 8) Write a nested try/catch statement.
+    int [] array = new int[10];
+    for (int i=0; i<array.length; i++){
+        array[i]=i;
+    }
+    try {
+      for (int x : array){
+        int y =2
+        try {
+            if (y/x!=0)
+        }
+        catch (ArithmeticException e){
+            sout ("division by zero");
+        }
+        x = y+1;
+      }
+      array [9] ="String";
+    }
+    catch (ArrayStoreException e){
+        sout ("incompatible array";
+    }
+
+
+
+
+
 
 9) What does it mean to rethrow an exception?
     It takes the exception and throws it back out to an outer catch or object of what is calling the exception
