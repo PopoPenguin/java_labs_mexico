@@ -11,17 +11,21 @@
 
 4) Write a full example of a try/catch/finally statement that catches two distinct exceptions
 
+    int [] array = new int [10];
 
-    for (int x = 0; x<10; x++){
+    for (int x = 0; x<=10; x++){
         try {
             int y=0;
             y = y/x;
 
         } catch (ArithmeticException e){
-            sout (ArithmeticException);
+            e.printStackTrace();
+        } catch (ArrayIndexOutOfBounds e){
+            sout ("Index out of bounds")
+        }
 
-        } finally {
-            sout ("This is end of try block");
+        finally {
+            sout ("This is end of try/catch block");
         }
 
 
@@ -59,11 +63,6 @@ superclass exception first? Why?
     catch (ArrayStoreException e){
         sout ("incompatible array";
     }
-
-
-
-
-
 
 9) What does it mean to rethrow an exception?
     It takes the exception and throws it back out to an outer catch or object of what is calling the exception
