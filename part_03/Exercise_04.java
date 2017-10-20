@@ -39,7 +39,7 @@ public class Exercise_04 {
         // print out a message to the console stating which hand the computer had, which hand
         // the play had and who won.
 
-        System.out.println("Computer throws " + compHand + ":  Player throws " + playHand);
+        System.out.println("CandyBox throws " + compHand + ":  Player throws " + playHand);
         System.out.println(results);
 
 

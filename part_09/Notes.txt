@@ -1,0 +1,13 @@
+
+System.in is an input stream from the console - reads byte by byte
+
+FileInputStream is just a wrapper around input stream of bytes
+    - allows opening of a file and also reading byte by byte
+
+    -for any input stream there is a file output stream
+
+
+If you want characters you would use character streams instead of byte streams
+
+
+
