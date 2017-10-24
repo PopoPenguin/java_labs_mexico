@@ -18,7 +18,7 @@ public class FileChecker {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-//      Check for file input from terminal.  commented out for
+//      Check for file input from terminal.  commented out for now
 //        if(args.length != 1) {
 //            System.out.println("Checking file location for modification.");
 //            return;
