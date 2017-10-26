@@ -1,9 +1,17 @@
 
 1) What is a lambda expression?
+    an anonymous method that is not executed on its own.  It is used to implement the method inline
 
 2) What is the general form of a lambda expression?
+    () -> value;
 
 3) What is a functional interface?
+    @FunctionalInterface
+    interface MyLambda<T>{
+    //one empty method
+    T someFunction(T n);
+    }
+
 
 4) Write a lambda expression that uses the following functional interface:
 
@@ -12,6 +20,19 @@
     }
 
     // write lambda here as though it were in another class
+    psvm(){
+
+    SomeInterface face = (a,b)->{
+        if (a>b){
+            return true;
+        }
+
+        return false;
+    };
+
+    sout("The value of a is greater than b = " + face.validate(5,10));
+
+    }
 
 5) Write a lambda expression that uses the following functional interface:
 
@@ -21,11 +42,32 @@
 
     // write lambda here as though it were in another class
 
+    psvm {
+
+        GenericTest exp = ( T a, T b) ->{
+
+            if (a.indexOf(b)){
+                return true;
+            }
+
+            return false;
+        };
+
+        sout(a + " has some value in  " + b + " is = "+ exp.run(10,20);
+    }
+
 6) Analyze and run the LambdaSpeedDemo.java file in the part_12 package. Understand the similarities between lambda expressions
 and anonymous inner classes as well as interfaces (and interface implementations). Run this application and take a look at the results.
 Change the number of loops for each test and see what happens. Which implementation is fastest? How did the lambda do?
 
+    anonymous and interface are similar in speeds
+    lambda did not do well by several factors
+
 7) What is variable capture?
+    when a variable that exists outside of the scope of the lambda expression is used, it is effectively final and
+    cannot be changed
+
 
 8) How do you throw an exception from within a lambda expression?
+    must declare the throws in the interface method declaration
 
