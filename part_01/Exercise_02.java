@@ -9,9 +9,16 @@ public class Exercise_02 {
 
     public static void main(String[] args) {
 
+
         // prints out "Hello World" until loop condition is satisfied
         for (int x = 0; x < 5; x++) {
             System.out.println("Hello World!");
         }
+
+//        for (...) {
+//            System.out.println(...);
+//        }
+
+
     }
 }

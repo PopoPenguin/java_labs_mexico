@@ -21,14 +21,11 @@
 
     // write lambda here as though it were in another class
 
-6) Write a lambda expression (including functional interface) as well as a traditional interface and interface implementation
-as well as an anonymous inner class. A three (the lambda, the interface implementation and the inner class) should do the EXACT
-same task. Use "long start = System.currentTimeMillis();" to get the start time and end time of each operation. Compare and
-contrast the three different approaches to running the same task and their speeds.
-
+6) Analyze and run the LambdaSpeedDemo.java file in the part_12 package. Understand the similarities between lambda expressions
+and anonymous inner classes as well as interfaces (and interface implementations). Run this application and take a look at the results.
+Change the number of loops for each test and see what happens. Which implementation is fastest? How did the lambda do?
 
 7) What is variable capture?
 
 8) How do you throw an exception from within a lambda expression?
 
-9) RYAN TODO: method reference questions
