@@ -14,9 +14,9 @@ class Exercise_02 {
     public static void main(String[] args) {
 
         Two_02 two = new Two_02();              //creating object of class Two_02
-        Exercise_02 one = new Exercise_02();    //creating object of class Exercise_02
+        Exercise_02 one = new Exercise_02();    //creating object of class ArraySwitchPos
 
-        one.method_01(two);                     //running method_01 of Exercise_02
+        one.method_01(two);                     //running method_01 of ArraySwitchPos
 
 
 
