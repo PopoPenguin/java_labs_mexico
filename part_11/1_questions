@@ -5,9 +5,13 @@
        public void consume(String parameter)
    }
 
+   public interface Consumer <T>{
+       public <V> void consume (V)
 2) What are a few advantages of using Generic types?
+    allows more flexibility of classes and methods
 
 3) What is Type Erasure?
+    Erasure is the JVM going back and replacing all the generics with the actual data type that is being used
 
 4) Assuming the following snippet:
 
@@ -19,10 +23,24 @@
     Integer i = returnType(1);
     String s = returnType("String");
 
+    Yes they will work
+
 5) What is a Bounded Type Parameter?
+    A generic parameter that is bounded by the types of generics that are acceptable
+    any subclass for the specified parameter boundary type is acceptable
 
 6) Demonstrate the use of Generic Wildcard in a method signature:
+    public void wildCard (Generic<?> ob){}
 
 7) What are bounded and unbounded wildcards in Generics?
+    unbound wildcards represents an unknown type
+    bounded wildcards are used to represent an unknown type that is a subclass of the specified generics
+
 
 8) What is difference between List<? extends T>  and  List <? super T> ?
+    extends places an upper bound so anything of class T or subclass of T will be bounded
+    while super places a lower bound so anything above that class is bound
+
+
+
+
