@@ -6,7 +6,7 @@ public class Controller {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);             //initiate scanner
-        System.out.println("Enter size of stack/queue");    //request an input from user to set size of queue and stack
+        System.out.println("Enter size of stack/generic_queue");    //request an input from user to set size of generic_queue and stack
         int size = input.nextInt();                         //storing input into variable size
         System.out.println();
         Stack test = new Stack(size);                       //creating object of Stack with size given by user
