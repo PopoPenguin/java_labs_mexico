@@ -9,11 +9,11 @@ public class QueueController {
 
         public static void main(String[] args) {
 
-            Queue test = new Queue(101);        //creating a new queue of size 101
+            Queue test = new Queue(101);        //creating a new generic_queue of size 101
 
             try {
-                for (int i = 0; i < test.size(); i++) {           //populating queue incrementally from 0 to 100
-                    test.put(i);                       //placing into the queue
+                for (int i = 0; i < test.size(); i++) {           //populating generic_queue incrementally from 0 to 100
+                    test.put(i);                       //placing into the generic_queue
                 }
             }
             catch (DataStructureFull full) {
