@@ -1,5 +1,5 @@
 
-Using Mysql shell do the following: write down each command you execute below for review.
+Using Mysql shell & MySQLWorkbench do the following: write down each command you execute below for review.
 
 - restore (populate) the sample employees database as illustrated here:
 https://dev.mysql.com/doc/employee/en/employees-installation.html
