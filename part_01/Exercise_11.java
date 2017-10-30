@@ -23,8 +23,8 @@ public class Exercise_11 {
         int immigration = totalSec / 40;    //calculating total immigrated during 3 years
 
         int endPop = startPop - dead + born + immigration;  //formula to calculate totat population over 3 years
-
-            System.out.println("Total population over 3 years is " + endPop);
+        // prints out value of endPop
+        System.out.println("Total population over 3 years is " + endPop);
 
     }
 }

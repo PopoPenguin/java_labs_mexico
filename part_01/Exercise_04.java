@@ -14,8 +14,10 @@ public class Exercise_04 {
 
      public static void main(String[] args) {
 
-         System.out.println("a , " + "a*2, " + "a*4");      // prints out string
-         for (int i = 1; i <= 4; i++) {                     // prints out table of calculation for i
+         // prints out specified string
+         System.out.println("a , " + "a*2, " + "a*4");
+         // prints out line with calculation based on i
+         for (int i = 1; i <= 4; i++) {
 
             System.out.println(i + " , " + i*2 + " , " + i*4);
          }

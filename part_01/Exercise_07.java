@@ -15,7 +15,7 @@ public class Exercise_07 {
 
         // calculates pi based on formula given
         double pi = 4.0 * (1 - (1.0 / 3) +(1.0 / 5) - (1.0 / 7) + (1.0 / 9) - (1.0 / 11));
-
+        // prints out pi
         System.out.println(pi);
     }
 }

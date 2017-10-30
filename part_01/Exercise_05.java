@@ -10,9 +10,9 @@ package part_01;
 public class Exercise_05 {
 
     public static void main(String[] arg) {
-
-        double x = (10.5 * 4.2 - 3.4 * 2) / (86.9 - 12.1);  // calculates equation given
-
+        // calculates equation given
+        double x = (10.5 * 4.2 - 3.4 * 2) / (86.9 - 12.1);
+        // print out value of x
         System.out.println(x);
     }
 }

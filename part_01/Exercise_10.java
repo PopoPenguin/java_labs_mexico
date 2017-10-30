@@ -12,7 +12,7 @@ public class Exercise_10 {
     public static void main(String[] args) {
 
         double dist = 12;               // setting # of distance in km
-        double min = 30;                // setting # of mintues
+        double min = 30;                // setting # of minutes
         double sec = 30;                // setting # of sec
         double hour = (min / 60) + (sec / 60 / 60);     //formula to calculate total hours
         double mile = dist / 1.6 ;                  //formula to convert km to miles

@@ -12,7 +12,7 @@ package part_01;
 public class Exercise_06 {
 
     public static void main(String[] args) {
-
+        // sets total to integer type and assigns 0 as its value
         int total = 0;
 
         for (int i = 0; i < 9 ; i++) {      // increments 9 positions
