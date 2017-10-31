@@ -3,10 +3,39 @@ Using Mysql shell & MySQLWorkbench do the following: write down each command you
 
 - restore (populate) the sample employees database as illustrated here:
 https://dev.mysql.com/doc/employee/en/employees-installation.html
+
+mysql -u root -p  -t </Users/PopoPenguin/CodingNomads/mysql/test_db-master/employees.sql
+
 - connect to your mysql via command line
+
+mysql -u root -p
+
 - select a database to use
+
+show databases;
+use employees;
+
 - run a variety of select queries against the various tables in employees db
+//shows existing tables in employees
+show tables;
+
+//shows all records of departments
+select * from departments;
+
+//shows all records in salaries
+select * from salaries;
+
 - use a join query against at least two tables
+
+//displays department manager names of department "quality management"
+select e.first_name, e.last_name,  d.dept_name
+from employees e
+join dept_manager dm
+	on e.emp_no = dm.emp_no
+join departments d
+	on dm.dept_no = d.dept_no
+where dept_name = "Quality Management"
+
 - create a backup dump file of the employees database as illustrated here: https://dev.mysql.com/doc/refman/5.7/en/mysqldump-sql-format.html
 
 
